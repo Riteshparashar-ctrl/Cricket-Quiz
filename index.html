@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Cricket Encyclopedia & Quiz Arena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="global-header">
+        <div class="logo">🏏 CricketCrest Hub</div>
+        <nav class="nav-links">
+            <a href="#" onclick="showIntro('general')">Home</a>
+            <a href="#" onclick="showIntro('aboutus')">About Portal</a>
+            <a href="https://www.icc-cricket.com" target="_blank">Official ICC News</a>
+        </nav>
+    </header>
+
+    <div class="quiz-wrapper">
+        
+        <div class="sidebar">
+            
+            <div class="menu-section">
+                <h3>📖 CRICKET ENCYCLOPEDIA</h3>
+                <button class="nav-btn active" onclick="showIntro('general')">1. General Overview</button>
+                <button class="nav-btn" onclick="showIntro('history')">2. Deep Cricket History</button>
+                <button class="nav-btn" onclick="showIntro('rules')">3. Comprehensive Laws</button>
+                <button class="nav-btn" onclick="showIntro('formats')">4. Analysis of Formats</button>
+                <button class="nav-btn" onclick="showIntro('aboutus')">5. Core Platform Specs</button>
+            </div>
+            
+            <div class="menu-section">
+                <h3>🏆 LIVE QUIZ ARENA</h3>
+                <button class="nav-btn quiz-btn" onclick="startQuiz('ipl')">⚡ IPL Tournament</button>
+                <button class="nav-btn quiz-btn" onclick="startQuiz('odi')">🏆 ODI Championship</button>
+                <button class="nav-btn quiz-btn" onclick="startQuiz('t20')">💥 T20 International</button>
+                <button class="nav-btn quiz-btn" onclick="startQuiz('test')">🏅 Test Match Arena</button>
+            </div>
+            
+            <div class="character-area">
+                <div class="bubble" id="char-speech">Welcome to the central cricket database. Select any encyclopedia article or launch a quiz!</div>
+                <div class="avatar-box">🤖 Guide Engine</div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="display-container" id="dynamic-box">
+                </div>
+        </div>
+
+    </div>
+
+    <footer class="global-footer">
+        <p>&copy; 2026 CricketCrest Hub Portal. All Rights Reserved. Designed for Ultimate Cricket Fans.</p>
+        <div class="footer-links">
+            <a href="#" onclick="showIntro('general')">Privacy Policy</a> | 
+            <a href="#" onclick="showIntro('aboutus')">Terms of Service</a> | 
+            <a href="#" onclick="showIntro('rules')">Game Disclaimer</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
