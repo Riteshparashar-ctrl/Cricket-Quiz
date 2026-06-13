@@ -206,79 +206,61 @@ body {
 /* ==========================================
    MOBILE & TABLET RESPONSIVE FIXES 
    ========================================== */
-
 @media screen and (max-width: 768px) {
-    /* Header links ko mobile setup dena */
-    .global-header {
-        flex-direction: column;
-        gap: 10px;
-        padding: 15px 20px;
-        text-align: center;
+    /* Pure main structural elements ko grid/flex reset dena */
+    body {
+        overflow-x: hidden !important;
     }
-    
+
+    .quiz-wrapper {
+        display: flex !important;
+        flex-direction: column !important; /* Forces layout to stack vertically */
+        height: auto !important;
+        min-height: calc(100vh - 120px) !important;
+        width: 100% !important;
+    }
+
+    /* Sidebar blocks */
+    .sidebar {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        padding: 20px 15px !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    /* Main Viewport Content Area */
+    .main-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 15px !important;
+        height: auto !important;
+        display: block !important;
+    }
+
+    .display-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 20px 15px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Header text stacking */
+    .global-header {
+        flex-direction: column !important;
+        gap: 12px !important;
+        padding: 15px !important;
+        text-align: center !important;
+    }
+
     .nav-links {
-        display: flex;
-        gap: 15px;
-        justify-content: center;
+        display: flex !important;
+        gap: 15px !important;
+        justify-content: center !important;
     }
 
     .nav-links a {
-        margin-left: 0;
-        font-size: 14px;
-    }
-
-    /* Wrapper ko row se column mein change karna taaki layout ek ke niche ek aaye */
-    .quiz-wrapper {
-        flex-direction: column;
-        height: auto; /* Scroll freeze hatane ke liye */
-        overflow: visible;
-    }
-
-    /* Sidebar full width ho jayega mobile par */
-    .sidebar {
-        width: 100%;
-        height: auto;
-        padding: 20px 15px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        overflow-y: visible;
-    }
-
-    /* AI Assistant box ko mobile par thoda clean adjust karna */
-    .character-area {
-        margin-top: 15px;
-    }
-
-    /* Main Area full content area use karega bina squeeze hue */
-    .main-content {
-        width: 100%;
-        padding: 15px;
-        overflow-y: visible;
-    }
-
-    /* White container box mobile ke borders se chipke na */
-    .display-container {
-        padding: 25px 20px;
-        border-radius: 10px;
-    }
-
-    /* Font sizes ko phone ke mutabik small aur readable banana */
-    .essay-title {
-        font-size: 24px;
-        line-height: 1.3;
-    }
-
-    .essay-paragraph {
-        font-size: 15px;
-        line-height: 1.6;
-        text-align: left; /* Mobile par clean read ke liye */
-    }
-
-    .question-text {
-        font-size: 18px;
-    }
-
-    .opt-btn {
-        padding: 12px;
-        font-size: 14px;
+        margin-left: 0 !important;
     }
 }
