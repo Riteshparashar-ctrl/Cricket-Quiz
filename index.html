@@ -18,41 +18,37 @@
     </header>
 
     <div class="quiz-wrapper">
-        
         <div class="sidebar">
+            <h2 class="brand" style="color: #ffffff; padding: 15px; font-size: 18px; font-weight: bold; font-family: sans-serif;">CRICKET ENCYCLOPEDIA</h2>
             
-            <div class="menu-section">
-                <h3>📖 CRICKET ENCYCLOPEDIA</h3>
-                <button class="nav-btn active" onclick="showIntro('general')">1. General Overview</button>
-                <button class="nav-btn" onclick="showIntro('history')">2. Deep Cricket History</button>
-                <button class="nav-btn" onclick="showIntro('rules')">3. Comprehensive Laws</button>
-                <button class="nav-btn" onclick="showIntro('formats')">4. Analysis of Formats</button>
-                <button class="nav-btn" onclick="showIntro('aboutus')">5. Core Platform Specs</button>
-            </div>
+            <button onclick="showIntro('general')" class="nav-btn active" id="btn-general">1. The general Overview</button>
+            <button onclick="showIntro('history')" class="nav-btn" id="btn-history">2. Deep Cricket History</button>
+            <button onclick="showIntro('rules')" class="nav-btn" id="btn-rules">3. Comprehensive Laws</button>
+            <button onclick="showIntro('formats')" class="nav-btn" id="btn-formats">4. Analysis of Formats</button>
+            <button onclick="showIntro('aboutus')" class="nav-btn" id="btn-aboutus">5. Core Platform Specs</button>
+            <button onclick="showIntro('worldcup')" class="nav-btn" id="btn-worldcup">6. About World Cup History</button>
+
+            <h2 class="brand" style="color: #38bdf8; padding: 15px 15px 5px 15px; font-size: 14px; font-weight: bold; font-family: sans-serif; margin-top: 20px;">🏆 LIVE QUIZ ARENA</h2>
             
-            <div class="menu-section">
-                <h3>🏆 LIVE QUIZ ARENA</h3>
-                <button class="nav-btn quiz-btn" onclick="startQuiz('ipl')">⚡ IPL Tournament</button>
-                <button class="nav-btn quiz-btn" onclick="startQuiz('odi')">🏆 ODI Championship</button>
-                <button class="nav-btn quiz-btn" onclick="startQuiz('t20')">💥 T20 International</button>
-                <button class="nav-btn quiz-btn" onclick="startQuiz('test')">🏅 Test Match Arena</button>
-            </div>
-            
+            <button onclick="startQuiz('ipl')" class="nav-btn" id="btn-ipl">⚡ IPL Tournament</button>
+            <button onclick="startQuiz('odi')" class="nav-btn" id="btn-odi">🏆 ODI Championship</button>
+            <button onclick="startQuiz('t20')" class="nav-btn" id="btn-t20">💥 T20 International</button>
+            <button onclick="startQuiz('test')" class="nav-btn" id="btn-test">🏅 Test Match Arena</button>
+        </div>
+
+        <div class="main-content">
             <div class="character-area">
                 <div class="bubble" id="char-speech">Welcome to the central cricket database. Select any encyclopedia article or launch a quiz!</div>
                 <div class="avatar-box">🤖 Guide Engine</div>
             </div>
-        </div>
 
-        <div class="main-content">
             <div class="display-container" id="dynamic-box">
                 </div>
         </div>
-
     </div>
 
     <footer class="global-footer">
-        <p>&copy; 2026 CricketCrest Hub Portal. All Rights Reserved. Designed for Ultimate Cricket Fans.</p>
+        <p>&copy; 2026 CricketCrest Hub Portal. All Rights Reserved.</p>
         <div class="footer-links">
             <a href="#" onclick="showIntro('general')">Privacy Policy</a> | 
             <a href="#" onclick="showIntro('aboutus')">Terms of Service</a> | 
