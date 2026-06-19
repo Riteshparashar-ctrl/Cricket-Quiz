@@ -267,36 +267,3 @@ body {
  
 
 
-
-@media (max-width: 768px) {
-
-  .quiz-wrapper {
-    flex-direction: column !important;
-  }
-
-  .sidebar {
-    width: 100% !important;
-  }
-
-  .main-content {
-    width: 100% !important;
-  }
-
-  .nav-btn {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-  }
-
-  .nav-btn::after {
-    content: "▼";
-    font-size: 0.85em;
-    color: inherit;
-  }
-
-  .nav-btn.active::after {
-    content: "▲";
-    color: #38bdf8;
-  }
-
-}
